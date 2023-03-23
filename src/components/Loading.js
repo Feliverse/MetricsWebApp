@@ -4,9 +4,7 @@ import '../styles/EFTs.css';
 
 const Loading = ({ body }) => (
   <ul className={`${body} loading`}>
-    <li>
-      
-    </li>
+    <li />
   </ul>
 );
 

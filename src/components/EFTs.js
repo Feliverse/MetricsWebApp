@@ -17,7 +17,7 @@ const EFTs = () => {
     if (itemsToShow === 4 || itemsToShow === efts.length) {
       setIsLoading(false);
     }
-  }, [isExpanded]);
+  }, [efts.length, isExpanded, itemsToShow]);
 
   const show = () => {
     if (itemsToShow === 4) {

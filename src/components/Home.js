@@ -31,7 +31,7 @@ const Home = () => {
     if (!efts.length) {
       dispatch(getEFTs());
     }
-  }, []);
+  }, [cryptos.length, dispatch, efts.length, forex.length, stocks.length]);
 
   return (
     <section className="home-page">

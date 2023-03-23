@@ -17,7 +17,7 @@ const Stocks = () => {
     if (itemsToShow === 4 || itemsToShow === stocks.length) {
       setIsLoading(false);
     }
-  }, [isExpanded]);
+  }, [isExpanded, itemsToShow, stocks.length]);
 
   const show = () => {
     if (itemsToShow === 4) {

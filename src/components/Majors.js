@@ -19,7 +19,7 @@ const Majors = () => {
     if (forex.length && !majors.length) {
       dispatch(getMajors(forex));
     }
-  }, []);
+  }, [dispatch, forex, majors.length]);
 
   const show = () => {
     if (itemsToShow === 3) {
