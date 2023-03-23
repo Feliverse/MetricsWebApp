@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { IoChevronBack } from 'react-icons/io5';
+import { IoChevronBack } from "react-icons/io5";
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { categories } from './data';
