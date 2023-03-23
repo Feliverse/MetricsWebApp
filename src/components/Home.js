@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { CiMicrophoneOn, CiSettings } from 'react-icons/ci';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { categories } from './data';
@@ -38,8 +39,16 @@ const Home = () => {
       <div className="top-bar">
         <h4>Markets</h4>
         <div className="top-left">
-          <i className="microphone icon" />
-          <i className="cog icon" />
+          <i className="microphone icon">
+            {' '}
+            <CiMicrophoneOn />
+            {' '}
+          </i>
+          <i className="cog icon">
+            {' '}
+            <CiSettings />
+            {' '}
+          </i>
         </div>
       </div>
 
@@ -48,12 +57,12 @@ const Home = () => {
           const { path, category, market_cap: cap } = item;
 
           return category === 'Forex' && (
-          <Link key={path} to={`/${path}`} className={`banner-link ${path}`}>
-            <div className="banner-info">
-              <h3 className="banner-title">{category}</h3>
-              <p className="total">{`Market Capitalization: ${cap}`}</p>
-            </div>
-          </Link>
+            <Link key={path} to={`/${path}`} className={`banner-link ${path}`}>
+              <div className="banner-info">
+                <h3 className="banner-title">{category}</h3>
+                <p className="total">{`Market Capitalization: ${cap}`}</p>
+              </div>
+            </Link>
           );
         })}
       </div>
@@ -65,13 +74,13 @@ const Home = () => {
           const { path, category, market_cap: cap } = item;
 
           return category !== 'Forex' && (
-          <Link key={path} to={`/${path}`} className={`category ${path}`}>
-            <div className="category-info">
-              <i className="chevron circle right icon" />
-              <h3 className="category-title">{category}</h3>
-              <p className="total">{`Cap: ${cap}`}</p>
-            </div>
-          </Link>
+            <Link key={path} to={`/${path}`} className={`category ${path}`}>
+              <div className="category-info">
+                <i className="chevron circle right icon" />
+                <h3 className="category-title">{category}</h3>
+                <p className="total">{`Cap: ${cap}`}</p>
+              </div>
+            </Link>
           );
         })}
       </div>

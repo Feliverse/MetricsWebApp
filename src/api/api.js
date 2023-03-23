@@ -7,10 +7,7 @@ const getData = async (url) => {
   }
 };
 
-export const fetchFxPrices = () => getData('https://financialmodelingprep.com/api/v3/fx?apikey=5d89975d35c10fcf5353706439854000');
-
-export const fetchCryptos = (symbol) => getData(`https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=5d89975d35c10fcf5353706439854000`);
-
-export const fetchStocks = () => getData('https://financialmodelingprep.com/api/v3/available-traded/list?apikey=5d89975d35c10fcf5353706439854000');
-
-export const fetchEFTs = () => getData('https://financialmodelingprep.com/api/v3/etf/list?apikey=5d89975d35c10fcf5353706439854000');
+export const fetchFxPrices = () => getData('https://financialmodelingprep.com/api/v3/fx?apikey=8ce2489bd91ac3214b4e53fb5561c267');
+export const fetchCryptos = (symbol) => getData(`https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=8ce2489bd91ac3214b4e53fb5561c267`);
+export const fetchStocks = () => getData('https://financialmodelingprep.com/api/v3/available-traded/list?apikey=8ce2489bd91ac3214b4e53fb5561c267');
+export const fetchEFTs = () => getData('https://financialmodelingprep.com/api/v3/etf/list?apikey=8ce2489bd91ac3214b4e53fb5561c267');

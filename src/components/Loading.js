@@ -7,7 +7,6 @@ const Loading = ({ body }) => (
     <li />
   </ul>
 );
-
 Loading.propTypes = {
   body: PropTypes.string.isRequired,
 };

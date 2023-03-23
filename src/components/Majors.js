@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaBackward } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { categories } from './data';
@@ -39,7 +40,9 @@ const Majors = () => {
           className="go-back"
           onClick={() => navigate('/')}
         >
-          <i className="chevron left icon" />
+          <p className="chevron left icon">
+            <FaBackward />
+          </p>
         </button>
         <h4>Major Currencies</h4>
         <div className="top-left" />
@@ -50,12 +53,12 @@ const Majors = () => {
           const { path, category, market_cap: cap } = item;
 
           return category === 'Majors' && (
-          <Link key={path} to={`/${path}`} className={`banner-link ${path}`}>
-            <div className="banner-info">
-              <h3 className="banner-title">{category}</h3>
-              <p className="total">{`Market Capitalization: ${cap}`}</p>
-            </div>
-          </Link>
+            <Link key={path} to={`/${path}`} className={`banner-link ${path}`}>
+              <div className="banner-info">
+                <h3 className="banner-title">{category}</h3>
+                <p className="total">{`Market Capitalization: ${cap}`}</p>
+              </div>
+            </Link>
           );
         })}
       </div>
@@ -63,7 +66,7 @@ const Majors = () => {
       <h4 className="sub-heading">Tradable Forex Pairs</h4>
 
       <ul className="major-pairs">
-        { majors.slice(0, itemsToShow).map((pair) => {
+        {majors.slice(0, itemsToShow).map((pair) => {
           const {
             ticker, high, low, changes,
           } = pair;

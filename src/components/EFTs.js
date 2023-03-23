@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaBackward } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import ShowButton from './ShowButton';
@@ -38,7 +39,9 @@ const EFTs = () => {
           className="go-back"
           onClick={() => navigate('/')}
         >
-          <i className="chevron left icon" />
+          <p className="chevron left icon">
+            <FaBackward />
+          </p>
         </button>
         <h4>ETFs</h4>
         <div className="top-left" />

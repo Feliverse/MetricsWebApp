@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaBackward } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import ShowButton from './ShowButton';
@@ -29,7 +30,9 @@ const Forex = () => {
           className="go-back"
           onClick={() => navigate('/')}
         >
-          <i className="chevron left icon" />
+          <p className="chevron left icon">
+            <FaBackward />
+          </p>
         </button>
         <h4>Currencies</h4>
         <div className="top-left" />
@@ -40,12 +43,12 @@ const Forex = () => {
           const { path, category, market_cap: cap } = item;
 
           return category === 'Forex' && (
-          <Link key={path} to={`/${path}`} className={`banner-link ${path}`}>
-            <div className="banner-info">
-              <h3 className="banner-title">{category}</h3>
-              <p className="total">{`Market Capitalization: ${cap}`}</p>
-            </div>
-          </Link>
+            <Link key={path} to={`/${path}`} className={`banner-link ${path}`}>
+              <div className="banner-info">
+                <h3 className="banner-title">{category}</h3>
+                <p className="total">{`Market Capitalization: ${cap}`}</p>
+              </div>
+            </Link>
           );
         })}
       </div>
@@ -53,7 +56,7 @@ const Forex = () => {
       <h4 className="sub-heading">Tradable Forex Pairs</h4>
 
       <ul className="forex-pairs">
-        { forex.slice(0, itemsToShow).map((pair) => {
+        {forex.slice(0, itemsToShow).map((pair) => {
           const {
             ticker, high, low, changes,
           } = pair;
@@ -79,7 +82,7 @@ const Forex = () => {
                         <span className="pair-change">Change:</span>
                         {' '}
                         <span className="positive">
-                          {`+${changes.toFixed(5)} `}
+                          {`+${changes.toFixed(4)} `}
                           &#9650;
                         </span>
                       </p>
@@ -89,7 +92,7 @@ const Forex = () => {
                         <span className="pair-change">Change:</span>
                         {' '}
                         <span className="negative">
-                          {`${changes.toFixed(5)} `}
+                          {`${changes.toFixed(4)} `}
                           &#9660;
                         </span>
                       </p>
