@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBackward } from 'react-icons/fa';
+import { IoChevronBack } from 'react-icons/io5';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import ShowButton from './ShowButton';
@@ -31,7 +31,7 @@ const Forex = () => {
           onClick={() => navigate('/')}
         >
           <p className="chevron left icon">
-            <FaBackward />
+            <IoChevronBack />
           </p>
         </button>
         <h4>Currencies</h4>

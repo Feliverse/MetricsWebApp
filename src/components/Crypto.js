@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBackward } from 'react-icons/fa';
+import { IoChevronBack } from 'react-icons/io5';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { categories } from './data';
@@ -33,7 +33,7 @@ const Crypto = () => {
           onClick={() => navigate('/')}
         >
           <p className="chevron left icon">
-            <FaBackward />
+            <IoChevronBack />
           </p>
         </button>
         <h4>Crypto Currencies</h4>

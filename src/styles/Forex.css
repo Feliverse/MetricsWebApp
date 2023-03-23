@@ -22,7 +22,7 @@
 
 .forex.pair,
 .majors.pair {
-  height: 18.33vh;
+  height: 15vh;
 }
 
 .pair-name {
@@ -48,13 +48,13 @@
 .pair-high {
   text-align: center;
   padding: 0 0.2rem;
-  background: rgba(0, 150, 0, 0.8);
+  background: rgba(4, 121, 4, 0.8);
   border-radius: 5px;
 }
 
 .pair-low {
   text-align: center;
   padding: 0 0.6rem 0 0.2rem;
-  background: rgba(230, 0, 0, 0.8);
+  background: rgba(151, 6, 6, 0.8);
   border-radius: 5px;
 }
