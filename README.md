@@ -105,6 +105,7 @@ Original design idea by Nelson Sakwa on Behance.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 [See live](https://metricswebapp.netlify.app/) 
+
 [Video Presentation](https://www.loom.com/share/42c09cbbb2fe441189cf12d794b9fa03) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -170,9 +171,7 @@ a Browser, localhost:3000
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
 - [ ] **functions**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
