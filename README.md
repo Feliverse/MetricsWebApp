@@ -68,7 +68,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-REACT + Redux
+React + Redux
 
 <details>
   <summary>Client</summary>
@@ -96,7 +96,7 @@ REACT + Redux
 ### Key Features <a name="key-features"></a>
 
 
-- **REACT**
+Original design idea by Nelson Sakwa on Behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,6 +105,7 @@ REACT + Redux
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 [See live](https://metricswebapp.netlify.app/) 
+[Video Presentation](https://www.loom.com/share/42c09cbbb2fe441189cf12d794b9fa03) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
