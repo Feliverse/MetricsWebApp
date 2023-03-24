@@ -104,7 +104,7 @@ REACT + Redux
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[soon](https://feliverse.github.io/) 
+[See live](https://metricswebapp.netlify.app/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
