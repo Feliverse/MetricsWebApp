@@ -149,3 +149,17 @@
   padding: 0 0.8rem;
   color: var(--text-color);
 }
+
+.botton-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.license-logo,
+.lic-text {
+  
+  color: var(--second-bg-color);
+  line-height: 1em;
+  font-size: smaller;
+}
+

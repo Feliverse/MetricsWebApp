@@ -85,7 +85,17 @@ const Home = () => {
         })}
       </div>
 
-      <div className="bottom-bar" />
+      <div className="bottom-bar">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img
+            className="license-logo"
+            alt="Licencia Creative Commons"
+            src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+          />
+        </a>
+        <br />
+        <a className="lic-text" rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>
+      </div>
     </section>
   );
 };
